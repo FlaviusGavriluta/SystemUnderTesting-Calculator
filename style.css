@@ -1,0 +1,183 @@
+/* Global reset to remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the whole body */
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: xx-large;
+  max-width: 100%;
+  overflow-x: hidden;
+  transition: 1s;
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+/* Styling for the header section */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-light);
+  font-size: x-large;
+  z-index: 999;
+  /* Use a high z-index to ensure it appears on top of other elements */
+}
+
+/* Styling for the calculator container */
+.calculator {
+  border: 5px solid black;
+  height: 530px;
+  width: 400px;
+  margin: auto;
+  background-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px #bebebe, -20px -20px 10px #ffffff;
+}
+
+/* Styling for the screen section */
+.screen {
+  position: relative;
+  height: 150px;
+  background-color: #f2f2f2;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  color: black;
+}
+
+/* Styling for the step-by-step section within the screen */
+.screen>.step-by-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* Styling for the output section within the screen */
+.screen>.output {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* Styling for the input buttons container */
+.input-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Styling for all the buttons within the input buttons container */
+.input-buttons>button {
+  padding: 10px;
+  background-color: #e6e6e6;
+  color: #333333;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 30px;
+}
+
+/* Hover and active styles for numeric buttons */
+.numeric:hover {
+  background-color: #d3d3d3;
+  scale: 0.95;
+}
+
+.numeric:active {
+  background-color: #bfbfbf;
+  scale: 0.9;
+}
+
+/* Hover and active styles for modal buttons */
+.modal-button:hover {
+  background-color: #FF5733;
+  scale: 0.95;
+}
+
+.modal-button:active {
+  background-color: #CC4200;
+  scale: 0.9;
+}
+
+/* Hover and active styles for operation buttons */
+.operation:hover {
+  background-color: #007BFF;
+  scale: 0.95;
+}
+
+.operation:active {
+  background-color: #0056B3;
+  scale: 0.9;
+}
+
+/* Hover and active styles for equal button */
+.equal:hover {
+  background-color: #00CC42;
+  scale: 0.95;
+}
+
+.equal:active {
+  background-color: #009933;
+  scale: 0.9;
+}
+
+/* Hover and active styles for decimal point button */
+.decimal:hover {
+  background-color: #FFFF33;
+}
+
+.decimal:active {
+  background-color: #B3B300;
+}
+
+/* Styling for buttons spanning two columns */
+.span {
+  grid-column: span 2;
+}
+
+/* Styling for the footer section */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-light);
+  font-size: x-large;
+}
+
+/* Styling for the GitHub icon link */
+#github-link {
+  width: 40px;
+  height: auto;
+  transition: 0.5s;
+}
+
+/* Hover effect for GitHub icon */
+#github-link:hover,
+#github:focus {
+  scale: 1.1;
+}
